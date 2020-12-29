@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+.fa-cog {
+    color: green;
+}
+
+
+/* SECTION 1 */
+#section1 {
+    background-image: url("https://picsum.photos/id/1022/200/300");
+    background-size: cover;
+    font-weight: 800;
+    padding: 100px 20px;
+}
+
+/* SECTION 2 */
+.crd1 {
+    margin: 10px;
+    padding: 15px;
+    border: white solid 4px;
+    transition: .2s ease-in-out;
+    text-align: center;
+}
+
+.crd1:hover {
+    border: green solid 2px
+}
+
+.crd2 {
+    min-height: 600px;
+    width: 400px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px;
+    justify-content: center;
+    border-radius: 35px;
+    border: 1px solid;
+    transition: .2s linear;
+}
+
+.crd2 img {
+    transition: .3s ease-in-out;
+}
+
+.crd2 img:hover {
+    transform: scale(1.05) translateY(10px)
+}
+
+.crd2:hover {
+    box-shadow: 10px 0 40px 0 green;
+}
