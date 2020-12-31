@@ -1,59 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+@import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:500");
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: azure;
+  margin: 0;
+  padding: 0;
+  background-color: azure;
 }
 
 .fa-cog {
-    color: green;
+  color: green;
 }
 
 .jic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* FADE IN AND SCROLL */
 
 .fade-in {
-    opacity: 0;
-    transition: opacity .5s ease-in;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 
 .fade-in.appear {
-    opacity: 1;
+  opacity: 1;
 }
 
 .from-left {
-
-    -webkit-transform: translateX(-70%);
-    transform: translateX(-70%);
+  -webkit-transform: translateX(-70%);
+  transform: translateX(-70%);
 }
 
 .from-right {
-
-    -webkit-transform: translateX(70%);
-    transform: translateX(70%);
+  -webkit-transform: translateX(70%);
+  transform: translateX(70%);
 }
 
 .from-left,
 .from-right {
-    transition: opacity .7s ease-in, -webkit-transform .9s ease-in;
-    transition: opacity .7s ease-in, transform .9s ease-in;
-    transition: opacity .7s ease-in, transform .9s ease-in,
-        -webkit-transform .9s ease-in;
-    opacity: 0;
+  transition: opacity 0.7s ease-in, -webkit-transform 0.9s ease-in;
+  transition: opacity 0.7s ease-in, transform 0.9s ease-in;
+  transition: opacity 0.7s ease-in, transform 0.9s ease-in,
+    -webkit-transform 0.9s ease-in;
+  opacity: 0;
 }
 
 .from-left.appear,
 .from-right.appear {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /* #demotext1 {
@@ -66,138 +64,153 @@ body {
 } */
 #blotter_main,
 #blotter_liquid {
-    height: 1px;
-
+  height: 1px;
 }
-
 
 /* SECTION 1 */
 #section1 {
-    background-image: url("https://picsum.photos/id/1022/200/300");
-    background-size: cover;
-    font-weight: 800;
-    padding: 100px 20px;
+  background-image: url("https://picsum.photos/id/1022/200/300");
+  background-size: cover;
+  font-weight: 800;
+  padding: 100px 20px;
 }
 
 #particles-js {
-    height: 600px;
-    background-color: black;
+  height: 600px;
+  background-color: black;
 }
 
 /* SECTION 2 */
 .crd1 {
-    margin: 10px;
-    padding: 15px;
-    border: white solid 4px;
-    transition: .2s ease-in-out;
-    text-align: center;
+  margin: 10px;
+  padding: 15px;
+  border: white solid 4px;
+  transition: 0.2s ease-in-out;
+  text-align: center;
 }
 
 .crd1:hover {
-    border: green solid 2px
+  border: green solid 2px;
 }
 
 .crd2 {
-    min-height: 600px;
-    width: 400px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 10px;
+  min-height: 600px;
+  width: 400px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 10px;
 
-    border-radius: 35px;
-    border: 1px solid;
-    transition: .2s linear;
+  border-radius: 35px;
+  border: 1px solid;
+  transition: 0.2s linear;
 }
 
 .crd2 img {
-    transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .crd2 img:hover {
-    transform: scale(1.05) translateY(10px)
+  transform: scale(1.05) translateY(10px);
 }
 
 .crd2:hover {
-    box-shadow: 10px 0 40px 0 green;
+  box-shadow: 10px 0 40px 0 green;
 }
 
 /* CLIP ART */
 .clip-container {
-    position: relative;
-    width: 100%;
-    height: 400px;
-
+  position: relative;
+  width: 100%;
+  height: 400px;
 }
 
 .clip-container .clip {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transition: 0.4s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.4s ease-in-out;
 }
 
 .clip-container .clip.clip1 {
-    background-image: url("https://picsum.photos/id/1022/200/300");
-    background-size: cover;
-    clip-path: polygon(0 0, 45% 0, 20% 100%, 0% 100%);
+  background-image: url("https://picsum.photos/id/1022/200/300");
+  background-size: cover;
+  clip-path: polygon(0 0, 45% 0, 20% 100%, 0% 100%);
 }
 
-
 .clip-container .clip.clip2 {
-    background-image: url("https://picsum.photos/id/1021/200/300");
-    background-size: cover;
-    clip-path: polygon(45% 0, 100% 0, 53% 100%, 20% 100%);
+  background-image: url("https://picsum.photos/id/1021/200/300");
+  background-size: cover;
+  clip-path: polygon(45% 0, 100% 0, 53% 100%, 20% 100%);
 }
 
 .clip-container .clip.clip3 {
-    background-image: url("https://picsum.photos/id/1023/200/300");
-    background-size: cover;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 53% 100%);
+  background-image: url("https://picsum.photos/id/1023/200/300");
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 53% 100%);
 }
 
 .clip-container:hover .clip {
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 99%);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 99%);
 }
 
 .clip-container .clip:hover {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 /* SECTION 4 */
 .flip-card {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    margin: 50px auto;
-    transform-style: preserve-3d;
-    transition: 0.4s ease-in-out;
-
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 50px auto;
+  transform-style: preserve-3d;
+  transition: 0.4s ease-in-out;
 }
 
 .front-flip,
 .back-flip {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004)
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #0004);
 }
 
 .flip-card:hover {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .front-flip {
-    background-color: yellow;
-    border-radius: 70%;
+  background-color: yellow;
+  border-radius: 70%;
 }
 
 .back-flip {
-    border-radius: 70%;
-    background-color: green;
-    transform: rotateY(180deg);
+  border-radius: 70%;
+  background-color: green;
+  transform: rotateY(180deg);
 }
+
+.header {
+    height: 60vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#FD3A69, 0.8),
+        rgba(#FECD1A, 0.8)),
+    url(../img/team.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        height: 95vh;
+    }
+
